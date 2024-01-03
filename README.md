@@ -15,7 +15,7 @@ The Open/Closed Principle encourages designing classes that can be extended to i
 - Extension without Modification: The behavior of a class should be extendable by adding new code rather than modifying existing code. This ensures that existing functionalities are not affected when new features are introduced.
 
 
-## Example of Violating SRP
+## Example of Violating OCP
 
 ```javascript
 public class PaymentProcessor
@@ -37,7 +37,7 @@ public class PaymentProcessor
 
 In this example, adding a new payment method requires modifying the existing ProcessPayment method, violating OCP.
 
-## Applying SRP
+## Applying OCP
 
 ```javascript
 public abstract class PaymentProvider
